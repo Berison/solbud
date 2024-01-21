@@ -1,0 +1,41 @@
+html,
+body {
+    font-family: 'Yeseva One', serif;
+    background: linear-gradient(90deg, #000 6.81%, #0B0A1F 28.28%, #0B0A1F 97.39%);
+    color: #fff;
+}
+
+:root {
+    --mainGreen: #2f921b;
+}
+
+* {
+    transition: all .3s;
+}
+
+.container {
+    max-width: 1295px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    
+    &.row {
+        padding: 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 0 16px;
+
+        &.row {
+            padding: 0 16px;
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+    font-family: "Yeseva One";
+}

@@ -1,0 +1,121 @@
+.popup-contact {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  padding: 32px 32px 84px;
+  border-radius: 15px;
+  background: #0A091C;
+  box-shadow: 0px 0px 20px 0px #5B626C;
+  max-width: 665px;
+  width: 100%;
+
+  @media (max-width: 576px) {
+    box-shadow: none;
+    border-radius: 0;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  visibility: hidden;
+  opacity: 0;
+
+  &.show {
+    visibility: visible;
+    opacity: 1;
+    left: 50%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+  }
+
+  &__icon {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    text-align: center;
+
+    strong {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  &__text {
+    max-width: 292px;
+    text-align: center;
+    margin: 0 auto;
+
+    @media (max-width: 576px) {
+      max-width: none;
+    }
+
+    p {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      opacity: 0.8;
+    }
+  }
+
+  &__content {
+    margin-bottom: 25px;
+  }
+
+  form {
+    max-width: 292px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    
+    @media (max-width: 576px) {
+      max-width: none;
+      margin: 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 16px;
+      border-radius: 15px;
+      border: 1px solid #C7C7C7;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      font-family: "Yeseva One";
+
+      &::placeholder {
+        opacity: .8;
+        font-family: "Yeseva One";
+      }
+    }
+
+    button {
+      padding: 10px 0;
+      width: 100%;
+      border-radius: 15px;
+      background: #5592ED;
+
+      color: #FFF;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
