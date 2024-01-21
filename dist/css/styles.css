@@ -172,7 +172,7 @@ button {
 }
 .header-inner {
   position: relative;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   align-items: center;
 }
@@ -310,7 +310,7 @@ button {
   position: fixed;
   top: 0;
   left: -100%;
-  z-index: 1;
+  z-index: 2;
   padding: 135px 22px 20px 70px;
   overflow-x: auto;
   height: 100%;
@@ -1028,6 +1028,12 @@ button {
   color: #FFF;
   font-size: 20px;
   font-weight: 400;
+}
+@media (max-width: 576px) {
+  .form-inner-content__button button {
+    padding: 21px 20px;
+    width: 100%;
+  }
 }
 .form .background-lines {
   position: absolute;

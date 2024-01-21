@@ -10,7 +10,7 @@
 
   &-inner {
     position: relative;
-    z-index: 1;
+    z-index: 3;
 
     display: flex;
     align-items: center;
@@ -182,7 +182,7 @@
   top: 0;
   left: -100%;
 
-  z-index: 1;
+  z-index: 2;
 
   padding: 135px 22px 20px 70px;
   overflow-x: auto;
