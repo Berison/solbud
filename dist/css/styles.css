@@ -530,6 +530,10 @@ button {
     padding: 50px 0;
   }
 }
+.objects-inner {
+  position: relative;
+  z-index: 2;
+}
 .objects-inner-header {
   display: flex;
   align-items: center;
@@ -569,6 +573,13 @@ button {
 .objects-inner-header__link a:hover {
   box-shadow: 0px 0px 8px 0px #568DDF;
 }
+.objects-inner-slider {
+  padding: 30px !important;
+}
+.objects-inner-slider .swiper-slide {
+  border-radius: 8px;
+  transition: all 0.3s;
+}
 .objects-inner-slider .swiper-slide__image {
   height: 300px;
 }
@@ -605,6 +616,15 @@ button {
 }
 .objects-inner-slider .swiper-slide__link a svg {
   margin-left: 7px;
+}
+.objects-inner-slider .swiper-slide:hover {
+  box-shadow: 0px 0px 30px 0px #403D65;
+  transition: all 0.3s;
+}
+@media (max-width: 576px) {
+  .objects-inner-slider {
+    padding: 0 !important;
+  }
 }
 .objects .background-lines {
   position: absolute;

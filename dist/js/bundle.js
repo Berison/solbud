@@ -1,6 +1,6 @@
 (() => {
   // header burger
-  const initBurgerTrigger = () => {
+  const initBurgerTrigger = (showBurger) => {
     const body = document.body;
     const internalClassList = {
       openButtonBurger: 'close',
@@ -10,17 +10,29 @@
     const btn = document.querySelector('.header-burger > button'),
       mobileMenu = document.querySelector('.burger-menu-mobile');
 
-    btn.addEventListener('click', () => {
-      if(btn.classList.contains(internalClassList.openButtonBurger)) {
-        btn.classList.remove(internalClassList.openButtonBurger);
-        mobileMenu.classList.remove(internalClassList.showClassMenu);
-        body.style.overflow = 'visible'
-      } else {
+      const openBurger = () => {
         btn.classList.add(internalClassList.openButtonBurger);
         mobileMenu.classList.add(internalClassList.showClassMenu);
         body.style.overflow = 'hidden'
       }
+
+      const closeBurger = () => {
+        btn.classList.remove(internalClassList.openButtonBurger);
+        mobileMenu.classList.remove(internalClassList.showClassMenu);
+        body.style.overflow = 'visible'
+      }
+    
+    if(showBurger !== undefined) {
+      closeBurger();
+    } else {
+      btn.addEventListener('click', () => {
+      if(btn.classList.contains(internalClassList.openButtonBurger)) {
+        closeBurger();
+      } else {
+        openBurger()
+      }
     })
+    }
   }
 
   // Objects slider home page
@@ -40,11 +52,11 @@
         },
         996: {
           slidesPerView: 2,
-          spaceBetween: 28
+          spaceBetween: 30
         },
         1280: {
           slidesPerView: 3,
-          spaceBetween: 28,
+          spaceBetween: 30,
         }
       }
     });
@@ -136,6 +148,20 @@
     })
   }
 
+  // Anchor logic
+  const initAnchorClick = () => {
+    const anchors = document.querySelectorAll('.anchor');
+
+    anchors.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        initBurgerTrigger(true);
+        const scrollBlock = document.querySelector(link.getAttribute('href'));
+        scrollBlock.scrollIntoView({ behavior: 'smooth' });
+      })
+    })
+  }
+
   // Init
   initBurgerTrigger();
   initObjectsSliderHome();
@@ -143,4 +169,5 @@
   initPopup();
   initDate();
   initImagesButton();
+  initAnchorClick();
 })();

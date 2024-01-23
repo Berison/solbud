@@ -20,13 +20,13 @@
     <div class="burger-menu-mobile">
       <nav class="burger-menu-mobile-list">
         <li class="burger-menu-mobile-list__item">
-          <a href="#">Головна</a>
+          <a href="https://berison.github.io/solbud/dist/">Головна</a>
         </li>
         <li class="burger-menu-mobile-list__item">
-          <a href="#">Наші роботи</a>
+          <a href="https://berison.github.io/solbud/dist/portfolio">Наші роботи</a>
         </li>
         <li class="burger-menu-mobile-list__item">
-          <a href="#">Контакти</a>
+          <a href="#contact" class="anchor">Контакти</a>
         </li>
       </nav>
       <div class="burger-menu-mobile-switcher">
@@ -47,14 +47,14 @@
       <div class="container">
         <div class="header-inner">
           <div class="header-inner__logo">
-            <a href="#">
+            <a href="https://berison.github.io/solbud/dist/">
               <img src="./assets/header/logo.jpg" alt="Солбуд">
             </a>
           </div>
           <nav class="header-inner-nav">
-            <li class="header-inner-nav__item header-inner-nav__item_active"><a href="#">Головна</a></li>
-            <li class="header-inner-nav__item"><a href="#">Наші роботи</a></li>
-            <li class="header-inner-nav__item"><a href="#">Контакти</a></li>
+            <li class="header-inner-nav__item header-inner-nav__item_active"><a href="https://berison.github.io/solbud/dist/">Головна</a></li>
+            <li class="header-inner-nav__item"><a href="https://berison.github.io/solbud/dist/portfolio">Наші роботи</a></li>
+            <li class="header-inner-nav__item"><a href="#contact" class="anchor">Контакти</a></li>
           </nav>
           <div class="header-inner-switcher">
             <div class="header-inner-switcher__item header-inner-switcher__item_active">Укр</div>
@@ -489,7 +489,7 @@
     </div>
     <!-- END Image -->
     <!-- Form section -->
-    <div class="form">
+    <div class="form" id="contact">
       <div class="container">
         <div class="form-inner">
           <div class="form-inner-content">
@@ -547,8 +547,41 @@
       </div>
     </div>
     <!-- END Form section -->
-    <!-- Popup contact form -->
-    <div class="popup-contact">
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-inner-navigation">
+            <div class="footer-inner-navigation__logo">
+              <a href="https://berison.github.io/solbud/dist/">
+                <img src="./assets/header/logo.jpg" alt="Солбуд">
+              </a>
+            </div>
+            <nav class="footer-inner-navigation__list">
+              <li class="footer-inner-navigation__item"><a href="https://berison.github.io/solbud/dist/">Головна</a></li>
+              <li class="footer-inner-navigation__item"><a href="https://berison.github.io/solbud/dist/portfolio">Наші роботи</a></li>
+              <li class="footer-inner-navigation__item"><a href="#contact" class="anchor">Контакти</a></li>
+            </nav>
+            <div class="footer-inner-navigation__contact">
+              <div class="footer-inner-navigation__phone">
+                <strong>Телефон</strong>
+                <a href="tel:0934277776">0934277776</a>
+              </div>
+              <div class="footer-inner-navigation__mail">
+                <strong>Email</strong>
+                <a href="mailto:solbud.bud@gmail.com">solbud.bud@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-inner-copyright">
+            <p>Copyright &#169; <span id="date"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer -->
+     <!-- Popup contact form -->
+     <div class="popup-contact">
       <div class="popup-contact__close">
         <button type="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
@@ -580,39 +613,6 @@
       </form>
     </div>
     <!-- END Popup contact form -->
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-inner">
-          <div class="footer-inner-navigation">
-            <div class="footer-inner-navigation__logo">
-              <a href="#">
-                <img src="./assets/header/logo.jpg" alt="Солбуд">
-              </a>
-            </div>
-            <nav class="footer-inner-navigation__list">
-              <li class="footer-inner-navigation__item"><a href="#">Головна</a></li>
-              <li class="footer-inner-navigation__item"><a href="#">Наші роботи</a></li>
-              <li class="footer-inner-navigation__item"><a href="#">Контакти</a></li>
-            </nav>
-            <div class="footer-inner-navigation__contact">
-              <div class="footer-inner-navigation__phone">
-                <strong>Телефон</strong>
-                <a href="tel:0934277776">0934277776</a>
-              </div>
-              <div class="footer-inner-navigation__mail">
-                <strong>Email</strong>
-                <a href="mailto:solbud.bud@gmail.com">solbud.bud@gmail.com</a>
-              </div>
-            </div>
-          </div>
-          <div class="footer-inner-copyright">
-            <p>Copyright &#169; <span id="date"></span></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- END Footer -->
   </body>
   <script src="./js/bundle.js"></script>
 </html>
