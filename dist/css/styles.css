@@ -125,9 +125,10 @@ ul, ol, li, nav {
   right: 55px;
   z-index: 9;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .callback {
-    display: none;
+    bottom: 20px;
+    right: 20px;
   }
 }
 

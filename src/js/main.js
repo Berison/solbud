@@ -119,7 +119,7 @@
     triggerButtonPopupHide.addEventListener('click', hidePopup);
 
     document.addEventListener('click', e => {
-      if(!e.target.closest('.popup-contact') && !e.target.closest('.toggle-popup')) {
+      if(!e.target.closest('.popup-contact') && !e.target.closest('.toggle-popup') && !e.target.closest('.header-burger')) {
         hidePopup();
       }
     })
