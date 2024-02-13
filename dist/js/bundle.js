@@ -101,7 +101,8 @@
 
     const body = document.body;
 
-    const showPopup = () => {
+    const showPopup = e => {
+      e.preventDefault()
       popupContact.classList.add('show');
       body.style.overflow = 'hidden'
     }

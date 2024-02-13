@@ -108,3 +108,14 @@ a {
 ul, ol, li, nav {
   list-style: none;
 } 
+
+.callback {
+  position: fixed;
+  bottom: 55px;
+  right: 55px;
+  z-index: 9;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
